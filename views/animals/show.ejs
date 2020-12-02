@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Animal #<%= animal.id %></h1>
+    <h3><%= animal.animal %></h3>
+    <h3>Needs brush: <%= animal.fur ? 'Yes' : 'No' %></h3>
+    <a href="/animals/<%= animal.id %>/edit">Edit Animal</a><br>
+    <a href="/animals">Back to List</a>
+    
+</body>
+</html>
