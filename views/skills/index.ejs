@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEI Skills</title>
+</head>
+<body>
+    <h1>SEI Skills</h1>
+    <ul>
+        <% skills.forEach(function(a) { %>
+            <li>
+                <form action="/skills/<%= a.id %>?_method=DELETE" class="delete-form" method="POST">
+                  </form>
+                  <a href="/skills/<%= a.id %>"><%= a.skill %></a>
+              
+                <br>
+                <p>Learned?</p>
+                <%= a.learned ? "Yes" : "No" %>
+                <button type="submit">X</button>
+
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/skills/new">Add Skill</a>
+    
+</body>
+</html>
