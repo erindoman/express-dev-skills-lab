@@ -4,5 +4,26 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: white;
+}
+
+body {
+  background-color: #9bd0e6;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px  rgb(110, 110, 236);
+  
+}
+
+li {
+  padding: 20px;
+  font-size: 20px;
+  color: white
+}
+
+button {
+  color: white;
+  background-color: rgb(110, 110, 236);
 }
