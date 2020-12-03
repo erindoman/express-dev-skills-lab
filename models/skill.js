@@ -9,7 +9,6 @@ module.exports = {
     getOne, 
     create,
     deleteOne,
-    update
 }
 
 function getAll() {
@@ -21,7 +20,7 @@ function getOne(id) {
 }
 
 function create(skill) {
-    skill.id = Date.now()*1000000
+    skill.id = Date.now()*10
     skill.learned = false
     skills.push(skill)
   }
@@ -31,8 +30,3 @@ function create(skill) {
     skills.splice(idx, 1)
   }
   
-  function update(id, newSkill) {
-    const idx = skills.findIndex(skill => skill.id === parseInt(id))
-    skills[idx].skill = newSkill.skill
-    skills[idx].skill = newSkill.fur === 'Learned?' ? true : false
-  }
